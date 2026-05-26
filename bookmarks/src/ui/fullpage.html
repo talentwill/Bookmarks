@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>书签智能整理</title>
+  <link rel="stylesheet" href="fullpage.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-left">
+        <h1>📚 书签智能整理</h1>
+        <span class="status-badge" id="status">🟢 实时监控中</span>
+      </div>
+      <div class="header-right">
+        <button id="btn-organize" class="btn btn-primary">⚡ 立即整理</button>
+        <button id="btn-settings" class="btn btn-secondary">⚙️ 设置</button>
+      </div>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="overview">📊 概览</button>
+      <button class="tab" data-tab="search">🔍 搜索</button>
+      <button class="tab" data-tab="domains">🌐 域名管理</button>
+      <button class="tab" data-tab="duplicates">🔗 重复检测</button>
+      <button class="tab" data-tab="dead-links">⚠️ 失效链接</button>
+    </nav>
+
+    <main class="content">
+      <section id="tab-overview" class="tab-content active">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">总书签</div>
+            <div class="stat-value" id="stat-total">-</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">域名数</div>
+            <div class="stat-value" id="stat-domains">-</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">标签数</div>
+            <div class="stat-value" id="stat-tags">-</div>
+          </div>
+          <div class="stat-card warning">
+            <div class="stat-label">重复</div>
+            <div class="stat-value" id="stat-duplicates">-</div>
+          </div>
+          <div class="stat-card danger">
+            <div class="stat-label">失效</div>
+            <div class="stat-value" id="stat-dead">-</div>
+          </div>
+        </div>
+        <div class="section">
+          <h3>最近整理的书签</h3>
+          <div id="recent-bookmarks" class="bookmark-list"></div>
+        </div>
+      </section>
+
+      <section id="tab-search" class="tab-content">
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="搜索书签、标签、域名...">
+          <select id="search-domain-filter">
+            <option value="">全部域名</option>
+          </select>
+          <select id="search-tag-filter">
+            <option value="">全部标签</option>
+          </select>
+          <button id="btn-search" class="btn btn-primary">搜索</button>
+        </div>
+        <div id="search-results" class="bookmark-list"></div>
+      </section>
+
+      <section id="tab-domains" class="tab-content">
+        <div id="domain-list" class="domain-list"></div>
+      </section>
+
+      <section id="tab-duplicates" class="tab-content">
+        <button id="btn-find-duplicates" class="btn btn-primary">扫描重复书签</button>
+        <div id="duplicate-list" class="duplicate-list"></div>
+      </section>
+
+      <section id="tab-dead-links" class="tab-content">
+        <button id="btn-check-dead-links" class="btn btn-primary">检测失效链接</button>
+        <div id="dead-link-list" class="dead-link-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="fullpage.js" type="module"></script>
+</body>
+</html>
