@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>设置 - 书签智能整理</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <div class="settings">
+    <h2>⚙️ 设置</h2>
+
+    <section class="section">
+      <h3>DeepSeek API 配置</h3>
+      <div class="form-group">
+        <label>API Key</label>
+        <input type="password" id="deepseek-key" placeholder="sk-xxx">
+      </div>
+      <div class="form-group">
+        <label>API 端点</label>
+        <input type="text" id="deepseek-url" placeholder="https://api.deepseek.com">
+      </div>
+      <div class="form-group">
+        <label>模型</label>
+        <input type="text" id="deepseek-model" placeholder="deepseek-chat">
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Supabase 配置（标签跨浏览器同步）</h3>
+      <div class="form-group">
+        <label>Supabase URL</label>
+        <input type="text" id="supabase-url" placeholder="https://xxx.supabase.co">
+      </div>
+      <div class="form-group">
+        <label>Supabase Key</label>
+        <input type="password" id="supabase-key" placeholder="anon-key">
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>失效链接检测</h3>
+      <div class="form-group">
+        <label>检测频率</label>
+        <select id="dead-link-frequency">
+          <option value="daily">每天</option>
+          <option value="weekly" selected>每周</option>
+          <option value="monthly">每月</option>
+        </select>
+      </div>
+    </section>
+
+    <button id="btn-save" class="btn btn-primary">保存设置</button>
+    <span id="save-status"></span>
+  </div>
+
+  <script src="settings.js" type="module"></script>
+</body>
+</html>
