@@ -2,12 +2,16 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>设置 - 书签智能整理</title>
   <link rel="stylesheet" href="settings.css">
 </head>
 <body>
   <div class="settings">
-    <h2>⚙️ 设置</h2>
+    <div class="settings-header">
+      <h2>⚙️ 设置</h2>
+      <button id="btn-back" class="btn btn-secondary">← 返回</button>
+    </div>
 
     <section class="section">
       <h3>DeepSeek API 配置</h3>
@@ -49,8 +53,10 @@
       </div>
     </section>
 
-    <button id="btn-save" class="btn btn-primary">保存设置</button>
-    <span id="save-status"></span>
+    <div class="settings-footer">
+      <button id="btn-save" class="btn btn-primary">保存设置</button>
+      <span id="save-status"></span>
+    </div>
   </div>
 
   <script src="settings.js" type="module"></script>

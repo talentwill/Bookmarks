@@ -5,18 +5,16 @@
   "description": "按域名自动分类书签，AI 生成标签，跨浏览器同步",
   "permissions": [
     "bookmarks",
-    "storage",
-    "alarms",
-    "activeTab"
+    "storage"
   ],
   "background": {
     "service_worker": "src/background/service-worker.js",
     "type": "module"
   },
   "action": {
-    "default_title": "书签智能整理",
-    "default_popup": "src/ui/fullpage.html"
+    "default_title": "书签智能整理"
   },
+  "options_page": "src/ui/settings.html",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",

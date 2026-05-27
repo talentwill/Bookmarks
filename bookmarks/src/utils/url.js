@@ -1,5 +1,10 @@
 export function removeTrackingParams(urlString, removeList) {
-  const url = new URL(urlString);
+  let url;
+  try {
+    url = new URL(urlString);
+  } catch {
+    return urlString;
+  }
   for (const param of removeList) {
     url.searchParams.delete(param);
   }

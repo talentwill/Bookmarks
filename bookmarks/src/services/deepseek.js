@@ -32,10 +32,20 @@ export function buildTagRequest({ title, url, domain, apiKey, baseUrl, model }) 
 }
 
 export function parseTagResponse(response) {
-  const content = response.choices[0].message.content;
-  const match = content.match(/\[.*\]/s);
-  if (match) {
-    return JSON.parse(match[0]);
+  const content = response.choices?.[0]?.message?.content;
+  if (!content) return [];
+
+  const match = content.match(/\[.*?\]/s);
+  if (!match) return [];
+
+  try {
+    const parsed = JSON.parse(match[0]);
+    if (!Array.isArray(parsed)) return [];
+    return parsed
+      .filter(tag => typeof tag === 'string' && tag.trim().length > 0)
+      .map(tag => tag.trim())
+      .slice(0, 4);
+  } catch {
+    return [];
   }
-  return [];
 }
