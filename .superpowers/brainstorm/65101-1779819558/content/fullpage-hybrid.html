@@ -1,0 +1,237 @@
+<h2>混合风格</h2>
+<p class="subtitle">仪表盘 + Tab 导航结合，取各自优点</p>
+
+<div class="mockup">
+  <div class="mockup-header">方案 C：混合风格</div>
+  <div class="mockup-body" style="font-family: system-ui; padding: 0;">
+    <div style="width: 100%; min-height: 500px; background: #f5f7fa;">
+      <!-- Top Header -->
+      <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 20px 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; align-items: center; gap: 20px;">
+            <div style="font-size: 24px; font-weight: 600;">📚 书签智能整理</div>
+            <div style="display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px;">
+              <span style="font-size: 14px;">🟢</span>
+              <span style="font-size: 13px;">实时监控中</span>
+            </div>
+            <div style="font-size: 13px; opacity: 0.7;">共 489 个书签 · 上次整理：2 小时前</div>
+          </div>
+          <div style="display: flex; gap: 12px;">
+            <button style="padding: 12px 24px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; border-radius: 8px; font-size: 14px; cursor: pointer; font-weight: 500;">
+              ⚡ 立即整理
+            </button>
+            <button style="padding: 12px 24px; background: rgba(255,255,255,0.1); color: white; border: none; border-radius: 8px; font-size: 14px; cursor: pointer;">
+              ⚙️ 设置
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Layout -->
+      <div style="display: flex; min-height: calc(500px - 80px);">
+        <!-- Left Sidebar - Categories -->
+        <div style="width: 220px; background: white; border-right: 1px solid #e0e0e0; padding: 20px;">
+          <div style="font-size: 14px; font-weight: 600; color: #1a1a2e; margin-bottom: 16px;">📂 分类</div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="padding: 10px 12px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 13px;">全部书签</span>
+              <span style="background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 10px; font-size: 11px;">489</span>
+            </div>
+
+            <div style="padding: 10px 12px; background: #f8f9fa; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 13px;">💻 编程开发</span>
+              <span style="background: #e3f2fd; color: #1976d2; padding: 2px 8px; border-radius: 10px; font-size: 11px;">156</span>
+            </div>
+
+            <div style="padding: 10px 12px; background: #f8f9fa; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 13px;">🤖 AI与机器学习</span>
+              <span style="background: #f3e5f5; color: #7b1fa2; padding: 2px 8px; border-radius: 10px; font-size: 11px;">89</span>
+            </div>
+
+            <div style="padding: 10px 12px; background: #f8f9fa; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 13px;">🎬 影视娱乐</span>
+              <span style="background: #fce4ec; color: #c62828; padding: 2px 8px; border-radius: 10px; font-size: 11px;">67</span>
+            </div>
+
+            <div style="padding: 10px 12px; background: #f8f9fa; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 13px;">🛠️ 工具效率</span>
+              <span style="background: #e0f7fa; color: #00838f; padding: 2px 8px; border-radius: 10px; font-size: 11px;">45</span>
+            </div>
+
+            <div style="padding: 10px 12px; background: #f8f9fa; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 13px;">📚 读书学习</span>
+              <span style="background: #fff3e0; color: #e65100; padding: 2px 8px; border-radius: 10px; font-size: 11px;">34</span>
+            </div>
+
+            <div style="padding: 10px 12px; background: #f8f9fa; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 13px;">💼 工作相关</span>
+              <span style="background: #e8eaf6; color: #283593; padding: 2px 8px; border-radius: 10px; font-size: 11px;">28</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e0e0e0;">
+            <div style="font-size: 14px; font-weight: 600; color: #1a1a2e; margin-bottom: 12px;">⚠️ 需要处理</div>
+            <div style="padding: 10px 12px; background: #fff3e0; border-radius: 8px; cursor: pointer; margin-bottom: 8px;">
+              <div style="font-size: 13px; color: #e65100;">🔗 重复书签</div>
+              <div style="font-size: 11px; color: #666; margin-top: 4px;">12 组需要清理</div>
+            </div>
+            <div style="padding: 10px 12px; background: #fce4ec; border-radius: 8px; cursor: pointer;">
+              <div style="font-size: 13px; color: #c62828;">⚠️ 失效链接</div>
+              <div style="font-size: 11px; color: #666; margin-top: 4px;">5 个需要清理</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div style="flex: 1; padding: 24px;">
+          <!-- Search & Filter Bar -->
+          <div style="background: white; border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+            <div style="display: flex; gap: 12px; align-items: center;">
+              <div style="flex: 1; position: relative;">
+                <input style="width: 100%; padding: 12px 16px 12px 40px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 14px;" placeholder="搜索书签、标签、域名...">
+                <span style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 16px;">🔍</span>
+              </div>
+              <select style="padding: 12px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 13px; background: #f8f8f8; min-width: 100px;">
+                <option>全部域名</option>
+              </select>
+              <select style="padding: 12px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 13px; background: #f8f8f8; min-width: 100px;">
+                <option>全部标签</option>
+              </select>
+              <button style="padding: 12px 20px; background: #667eea; color: white; border: none; border-radius: 8px; font-size: 13px; cursor: pointer;">
+                搜索
+              </button>
+            </div>
+          </div>
+
+          <!-- Content Area -->
+          <div style="display: grid; grid-template-columns: 1fr 280px; gap: 24px;">
+            <!-- Bookmarks List -->
+            <div style="background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                <h3 style="font-size: 16px; font-weight: 600;">全部书签</h3>
+                <div style="display: flex; gap: 8px;">
+                  <button style="padding: 6px 12px; background: #f0f0f0; border: none; border-radius: 6px; font-size: 12px; cursor: pointer;">最新</button>
+                  <button style="padding: 6px 12px; background: #667eea; color: white; border: none; border-radius: 6px; font-size: 12px; cursor: pointer;">按分类</button>
+                  <button style="padding: 6px 12px; background: #f0f0f0; border: none; border-radius: 6px; font-size: 12px; cursor: pointer;">按域名</button>
+                </div>
+              </div>
+
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                <div style="display: flex; align-items: center; padding: 14px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea;">
+                  <div style="width: 40px; height: 40px; background: #e3f2fd; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; margin-right: 14px;">💻</div>
+                  <div style="flex: 1;">
+                    <div style="font-size: 14px; font-weight: 500;">GitHub - awesome-project</div>
+                    <div style="font-size: 12px; color: #666; margin-top: 4px;">github.com/user/awesome-project</div>
+                  </div>
+                  <div style="display: flex; gap: 6px; margin-right: 12px;">
+                    <span style="background: #e3f2fd; color: #1976d2; padding: 4px 10px; border-radius: 6px; font-size: 11px;">编程开发</span>
+                    <span style="background: #f3e5f5; color: #7b1fa2; padding: 4px 10px; border-radius: 6px; font-size: 11px;">代码</span>
+                    <span style="background: #f3e5f5; color: #7b1fa2; padding: 4px 10px; border-radius: 6px; font-size: 11px;">开源</span>
+                  </div>
+                  <div style="font-size: 12px; color: #999;">刚刚</div>
+                </div>
+
+                <div style="display: flex; align-items: center; padding: 14px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #764ba2;">
+                  <div style="width: 40px; height: 40px; background: #e8f5e9; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; margin-right: 14px;">🤖</div>
+                  <div style="flex: 1;">
+                    <div style="font-size: 14px; font-weight: 500;">ChatGPT - AI 对话</div>
+                    <div style="font-size: 12px; color: #666; margin-top: 4px;">chat.openai.com</div>
+                  </div>
+                  <div style="display: flex; gap: 6px; margin-right: 12px;">
+                    <span style="background: #e8f5e9; color: #2e7d32; padding: 4px 10px; border-radius: 6px; font-size: 11px;">AI与机器学习</span>
+                    <span style="background: #f3e5f5; color: #7b1fa2; padding: 4px 10px; border-radius: 6px; font-size: 11px;">AI</span>
+                  </div>
+                  <div style="font-size: 12px; color: #999;">1 小时前</div>
+                </div>
+
+                <div style="display: flex; align-items: center; padding: 14px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #f093fb;">
+                  <div style="width: 40px; height: 40px; background: #fce4ec; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; margin-right: 14px;">🎬</div>
+                  <div style="flex: 1;">
+                    <div style="font-size: 14px; font-weight: 500;">B站 - 学习视频合集</div>
+                    <div style="font-size: 12px; color: #666; margin-top: 4px;">bilibili.com/video/BV1xx...</div>
+                  </div>
+                  <div style="display: flex; gap: 6px; margin-right: 12px;">
+                    <span style="background: #fce4ec; color: #c62828; padding: 4px 10px; border-radius: 6px; font-size: 11px;">影视娱乐</span>
+                    <span style="background: #f3e5f5; color: #7b1fa2; padding: 4px 10px; border-radius: 6px; font-size: 11px;">视频</span>
+                  </div>
+                  <div style="font-size: 12px; color: #999;">5 分钟前</div>
+                </div>
+
+                <div style="display: flex; align-items: center; padding: 14px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #4facfe;">
+                  <div style="width: 40px; height: 40px; background: #e0f7fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; margin-right: 14px;">🛠️</div>
+                  <div style="flex: 1;">
+                    <div style="font-size: 14px; font-weight: 500;">Notion - 笔记工具</div>
+                    <div style="font-size: 12px; color: #666; margin-top: 4px;">notion.so</div>
+                  </div>
+                  <div style="display: flex; gap: 6px; margin-right: 12px;">
+                    <span style="background: #e0f7fa; color: #00838f; padding: 4px 10px; border-radius: 6px; font-size: 11px;">工具效率</span>
+                    <span style="background: #f3e5f5; color: #7b1fa2; padding: 4px 10px; border-radius: 6px; font-size: 11px;">笔记</span>
+                  </div>
+                  <div style="font-size: 12px; color: #999;">2 小时前</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Sidebar - Quick Info -->
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <!-- Quick Stats -->
+              <div style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                <div style="font-size: 14px; font-weight: 600; margin-bottom: 12px;">📊 快速统计</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                  <div style="text-align: center; padding: 12px; background: #f8f9fa; border-radius: 8px;">
+                    <div style="font-size: 24px; font-weight: 600; color: #4caf50;">95%</div>
+                    <div style="font-size: 11px; color: #666;">已分类</div>
+                  </div>
+                  <div style="text-align: center; padding: 12px; background: #f8f9fa; border-radius: 8px;">
+                    <div style="font-size: 24px; font-weight: 600; color: #ff9800;">22</div>
+                    <div style="font-size: 11px; color: #666;">待处理</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Recent Tags -->
+              <div style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                <div style="font-size: 14px; font-weight: 600; margin-bottom: 12px;">🏷️ 热门标签</div>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                  <span style="background: #e3f2fd; color: #1976d2; padding: 6px 12px; border-radius: 20px; font-size: 12px; cursor: pointer;">代码 (89)</span>
+                  <span style="background: #f3e5f5; color: #7b1fa2; padding: 6px 12px; border-radius: 20px; font-size: 12px; cursor: pointer;">AI (67)</span>
+                  <span style="background: #e8f5e9; color: #2e7d32; padding: 6px 12px; border-radius: 20px; font-size: 12px; cursor: pointer;">教程 (45)</span>
+                  <span style="background: #fff3e0; color: #e65100; padding: 6px 12px; border-radius: 20px; font-size: 12px; cursor: pointer;">工具 (34)</span>
+                  <span style="background: #fce4ec; color: #c62828; padding: 6px 12px; border-radius: 20px; font-size: 12px; cursor: pointer;">视频 (28)</span>
+                  <span style="background: #e0f7fa; color: #00838f; padding: 6px 12px; border-radius: 20px; font-size: 12px; cursor: pointer;">开源 (23)</span>
+                </div>
+              </div>
+
+              <!-- Quick Actions -->
+              <div style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                <div style="font-size: 14px; font-weight: 600; margin-bottom: 12px;">⚡ 快捷操作</div>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                  <button style="padding: 10px; background: #667eea; color: white; border: none; border-radius: 8px; font-size: 13px; cursor: pointer; text-align: left;">
+                    🔍 搜索书签
+                  </button>
+                  <button style="padding: 10px; background: #f0f0f0; border: none; border-radius: 8px; font-size: 13px; cursor: pointer; text-align: left;">
+                    🔗 检测失效链接
+                  </button>
+                  <button style="padding: 10px; background: #f0f0f0; border: none; border-radius: 8px; font-size: 13px; cursor: pointer; text-align: left;">
+                    📋 查找重复书签
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="options" style="margin-top: 24px;">
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>混合风格</h3>
+      <p>左侧分类导航 + 右侧内容区 + 右侧信息栏，功能全面且布局合理</p>
+    </div>
+  </div>
+</div>

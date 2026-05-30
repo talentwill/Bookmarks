@@ -1,0 +1,6 @@
+{"type":"server-started","port":63261,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:63261","screen_dir":"/Users/willwu/_/Coding/demos/WebBookmarks/.superpowers/brainstorm/65101-1779819558/content","state_dir":"/Users/willwu/_/Coding/demos/WebBookmarks/.superpowers/brainstorm/65101-1779819558/state"}
+{"type":"screen-added","file":"/Users/willwu/_/Coding/demos/WebBookmarks/.superpowers/brainstorm/65101-1779819558/content/popup-mockup.html"}
+{"type":"screen-added","file":"/Users/willwu/_/Coding/demos/WebBookmarks/.superpowers/brainstorm/65101-1779819558/content/fullpage-mockup.html"}
+{"type":"screen-added","file":"/Users/willwu/_/Coding/demos/WebBookmarks/.superpowers/brainstorm/65101-1779819558/content/fullpage-tabs.html"}
+{"type":"screen-added","file":"/Users/willwu/_/Coding/demos/WebBookmarks/.superpowers/brainstorm/65101-1779819558/content/fullpage-hybrid.html"}
+{"type":"server-stopped","reason":"idle timeout"}
